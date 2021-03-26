@@ -38,7 +38,7 @@
 					<div class="uk-container">
 						<section class="content-two uk-grid uk-width-1-1">
 							<div class="card-two uk-width-1-2">
-								<h1 class="title-two">Cloud Based RCM Service and Software</h1>
+								<h2 class="title-two">Cloud Based RCM Service and Software</h2>
 								<div class="border-top2">&nbsp;</div>
 								<h3 class="subtitle-two">Excellent Service is Our Promise</h3>
 								<div class="description-two">Providing excellent service to your patients and your pratice is our promise. Our dedicated team of billing specialists and billing managers are here to help. We have over 38 years of combined pratice management and industry knowledge. Let our experience work for your.</div>
@@ -65,16 +65,41 @@
 				<div class="content-area">
 					<div class="uk-container">
 						<section class="content-three uk-grid uk-width-1-1">
-							<div class="card-three uk-width-1-2">
-								<h2 class="title-three">From Small Practices to Large Provider Health Systems, Med USA Provides Scalable Solutions.</h2>
-								<div class="top-form">Reach out to see how our team can help.</div>
-								<div class="form-area">
-									<form class="main-form">
-										<input type="text" name="firstName" placeholder="First Name" title="First Name">
-										<input type="text" name="lastName" placeholder="Last Name" title="Last Name">
-										<input type="email" name="email" placeholder="Email" title="Email">
-										<input type="tel" name="phone" placeholder="Phone" title="Phone">
-										<button class="uk-button uk-button-primary button-case" name="submit" type="button">Send Message</button>  
+							<div class="uk-grid uk-width-1-3">&nbsp;</div>
+							<div class="card-three uk-grid uk-width-2-3">
+								<div class="uk-grid">
+									<!-- <img class="diagonal-top" src="<?php echo get_template_directory_uri() . '/images/qb_upper.png'?>" /> -->
+									<div class="diagonal-top">&nbsp;</div>
+									<div class="title-three">From Small Practices to Large Provider Health Systems, Med USA Provides Scalable Solutions.</div>
+									<div class="diagonal-bottom">&nbsp;</div>
+									<!-- <img class="diagonal-bottom" src="<?php echo get_template_directory_uri() . '/images/qb_lower.png'?>" /> -->
+									<div class="top-form uk-grid">Reach out to see how our team can help.</div>
+								</div>
+								
+								<div class="form-area uk-grid">
+									<form class="main-form uk-grid">
+											<div class="label-float">
+												<input class="" type="text" name="firstName" placeholder=" " title="First Name">
+												<label class="label-class">First Name</label>
+											</div>
+											<div class="label-float">
+												<input class="" type="text" name="lastName" placeholder=" " title="Last Name">
+												<label class="label-class">Last Name</label>
+											</div>
+											<div class="label-float">
+												<input class="" type="email" name="email" placeholder=" " title="Email">
+												<label class="label-class">Email</label>
+											</div>
+											<div class="label-float">
+												<input class="" type="tel" name="phone" placeholder=" " title="Phone">
+												<label class="label-class">Phone</label>
+											</div>
+										<div class="uk-grid uk-margin-top uk-width-1-1">
+											<div class="uk-width-1-3"></div>
+											<div class="uk-width-1-3"></div>
+											<div class="uk-width-1-3"><button class="uk-button uk-button-primary button-submit floatRight" name="submit" type="button">Submit</button>  </div>
+											
+										</div>
 									</form>
 								</div>
 							</div>

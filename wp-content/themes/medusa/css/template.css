@@ -14,7 +14,7 @@
 }
 
 html{
-margin-top: 0px !important;
+	margin-top: 0px !important;
 }
 
 body{
@@ -23,28 +23,41 @@ body{
 
 .menu-main-menu-container{float: right;}
 
-.login-menu ul li, .main-menu ul li, .footer-menu ul li, .menu-bottom-bar ul li{display: inline; }
+.login-menu ul li, .main-menu ul li, .menu-bottom-bar ul li{display: inline; }
 .login-menu ul li a:hover, .main-menu ul li a:hover, .footer-menu ul li a:hover, .menu-bottom-bar ul li a:hover{text-decoration: none;}
-.packages-menu ul{list-style: none;}
-.packages-menu ul a:hover{text-decoration: none;}
-
+.packages-menu {color: #fff;}
+.packages-menu ul {    list-style-type: none !important;}
+.packages-menu ul li {margin-top: 10px;}
+.packages-menu ul li a{text-decoration: none; color: #fff;}
+.packages-menu ul li a:hover{text-decoration: none; color: #fff;}
+.menu-bottom-bar{}
+.menu-bottom-bar ul{}
+.menu-bottom-bar ul li{}
+.menu-bottom-bar ul li a{ 
+	color: #bebebb !important;
+	font-size: 12px;
+	font-family: Montserrat-semibold; 
+	padding-right: 10px;
+}
+.menu-bottom-bar ul li a:hover{ 
+}
 .login-menu ul, .main-menu ul{
 	display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .login-menu ul li, .main-menu ul li{
 	display: list-item;
-    text-align: -webkit-match-parent;
+	text-align: -webkit-match-parent;
 }
 
 .login-menu ul li a, .main-menu ul li a{
 	color: #c6c6c6;
-    text-transform: uppercase;
-    transition: .1s ease-in-out;
-    transition-property: color,background-color;
+	text-transform: uppercase;
+	transition: .1s ease-in-out;
+	transition-property: color,background-color;
 }
 
 .login-menu ul li a{
@@ -59,6 +72,27 @@ body{
 	text-transform: uppercase;
 	font-size: 14px;
 	margin: 0px 0px 0px 80px;
+}
+
+.footer-menu{
+	font-size: 14px;
+}
+
+.footer-menu ul li a{
+	color:#fff;
+	margin: 0px 0px 0px 50px !important;
+}
+.footer-menu ul li{
+	margin: 0px 0px 20px 00px !important;
+}
+
+.footer-menu ul li{
+display: block !important;
+}
+
+.menu-bottom-menu-container{
+	float: right !important;
+
 }
 
 .navbar-nav li a, .uk-navbar-item, .uk-navbar-toggle{
@@ -89,16 +123,16 @@ body{
 .image-one{ 
 	background: url('../images/img1.jpg') no-repeat;
 	height: 660px;
-    width: 960px;
-    margin-left: -80px;
-    max-width: 100%;
+	width: 960px;
+	margin-left: -80px;
+	max-width: 100%;
 }
 
 .image-two{
 	background: url('../images/img2.jpg') no-repeat;
 	height: 560px;
-    width: 500px;
-    max-width: 100%;
+	width: 500px;
+	max-width: 100%;
 }
 
 .bg1{
@@ -107,23 +141,20 @@ body{
 .bg2{
 	background: linear-gradient(rgba(20,20,20,1.9),rgba(20,20,20,.3),rgba(20,20,20,1.9)), url('../images/img3.jpg') center center no-repeat;
 	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: auto;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: auto;
 }
 
 .bg3{
 	background: url('../images/img3.jpg') center center no-repeat;
 	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /*height: 612px;*/
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*height: 612px;*/
 }
-
-
-
 
 .content-one{
 	background: #0a0a0a;
@@ -141,7 +172,11 @@ body{
 
 .title-three{
 	color: #1c1a14 !important;
-	font-family: Montserrat-semibold;
+	font-family: Montserrat-bold;
+	font-size: 25px;
+	border: 10px solid transparent;
+	padding: 13px;
+	border-image: url(../images/border-diagonal.png) 10 stretch;
 }
 
 .subtitle-one, .subtitle-two{
@@ -150,7 +185,7 @@ body{
 	font-size: 21px;
 	padding: 20px 0px 20px 0px;
 }
-	
+
 span{ display: block; }
 
 .card-one{
@@ -166,12 +201,12 @@ span{ display: block; }
 	margin-top: 40px;
 }
 
-.button-services, .button-software, .button-case{
+.button-services, .button-software, .button-case, .button-submit{
 	background-color: #c8102e !important;
 	font-size: 12px !important;
 	color:#fff !important;
 }
-.button-services:hover, .button-software:hover, .button-case:hover{
+.button-services:hover, .button-software:hover, .button-case:hover, .button-submit:hover{
 	background-color: #a00d25 !important;
 	font-size: 12px !important;
 	color:#fff !important;
@@ -192,15 +227,92 @@ span{ display: block; }
 
 .top-form{
 	color: #1d1a14;
-	font-family: Montserrat;
+	font-family: Montserrat-bold;
+	padding: 0px 0px 0px 20px;
+
 }
 
-input {
-  background:transparent !important;
-  outline: 0;
-  border-width: 0 0 2px;
-  border-color: #c91b38;
+.label-float{
+	position: relative;
+	padding-top: 35px;
+	color: #555452 !important;
+	font-size: 13px;
+
 }
-input:focus {
-  border-color: #e43955;
+
+.label-float input{
+	background:transparent !important;
+	border: 0;
+	border-bottom: 2px solid #c91b38;
+	outline: none;
+	width: 290px;
+	min-width: 180px;
+	font-size: 16px;
+	transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-webkit-appearance:none;
+	border-radius: 0;
 }
+
+.label-float input:focus{
+	border-bottom: 2px solid #e43955;
+	color: #555452 !important;
+}
+
+label-float input::placeholder{
+	color:transparent;
+}
+
+.label-float label{
+	pointer-events: none;
+	position: absolute;
+	top: 15px;
+	left: 0;
+	margin-top: 13px;
+	transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+}
+
+.label-class{
+	margin-left: 40px !important;
+}
+
+.label-float input:required:invalid + label{
+	color: red;
+}
+.label-float input:focus:required:invalid{
+	border-bottom: 2px solid red;
+}
+.label-float input:required:invalid + label:before{
+	content: '*';
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+	font-size: 10px;
+	margin-top: 0;
+	color: #3951b2;
+}
+
+.footer-one{
+    padding: 50px 0px 50px 0px;
+}
+
+.address{
+	font-size: 15px;
+	color: #fff;
+}
+
+.social-icons{
+	color: #fff;
+}
+
+.copyright{
+	color: #bebebb !important;
+	font-size: 12px;
+	font-family: Montserrat-semibold;
+}
+
+
+

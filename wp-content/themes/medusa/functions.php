@@ -14,7 +14,9 @@ function medusa_config(){
 		array(
 			'top_menu' => 'Main Menu Top',
 			'my_main_menu' => 'Main Menu',
-			'footer_menu' => 'Main Menu Footer',
+			'footer_menu_1' => 'Main Menu Footer block 1',
+			'footer_menu_2' => 'Main Menu Footer block 2',
+			'footer_menu_3' => 'Main Menu Footer block 3',
 			'packages_menu' => 'Main Menu Packages',
 			'bottom_menu' => 'Main menu Bottom Bar'
 		)
@@ -25,6 +27,6 @@ function medusa_config(){
     'width'  => 720,
 ) );
 
-	
+
 }
 add_action( 'after_setup_theme' , 'medusa_config' , 0 );
