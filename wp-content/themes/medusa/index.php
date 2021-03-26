@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+
+<!-- Section one -->
 <div class="content-area">
 
 	<div class="bg1">
@@ -25,11 +27,12 @@
 		</div>
 	</div>
 </div>
+<!-- Section one -->
 
-<!-- Begin Test Section image -->
+<!-- Section two -->
 <div class="uk-section uk-section-default padding-top0 general">
 	<div class="uk-section-default">
-		<div class="uk-section uk-light uk-background-cover bg2">
+		<div class="uk-section uk-light uk-background-cover bg2 general">
 			<div class="uk-container">
 				<div class="content-area">
 					<div class="uk-container">
@@ -51,29 +54,39 @@
 		</div>
 	</div>
 </div>
-<!-- End Test Section image -->
+<!-- Section two -->
 
+<!-- Section three -->
 
-
-	
-
-<div class="content-area">
-	<div class="uk-container">
-		<section class="contact uk-grid uk-grid-width-small-1-1">
-			<div class="title-three">From Small Practices to Large Provider Health Systems, Med USA Provides Scalable Solutions.</div>
-			<div class="top-form">Reach out to see how our team can help.</div>
-			<div class="form-area">
-				<form class="main-form">
-					<input type="text" name="firstName" title="First Name">
-					<input type="text" name="lastName" title="Last Name">
-					<input type="email" name="email" title="Email">
-					<input type="tel" name="phone" title="Phone">
-					<button name="submit" type="button">Submit</button>  
-				</form>
+<div class="uk-section uk-section-default general margintop-50">
+	<div class="uk-section-default">
+		<div class="uk-section uk-light uk-background-cover bg3">
+			<div class="uk-container">
+				<div class="content-area">
+					<div class="uk-container">
+						<section class="content-three uk-grid uk-width-1-1">
+							<div class="card-three uk-width-1-2">
+								<h2 class="title-three">From Small Practices to Large Provider Health Systems, Med USA Provides Scalable Solutions.</h2>
+								<div class="top-form">Reach out to see how our team can help.</div>
+								<div class="form-area">
+									<form class="main-form">
+										<input type="text" name="firstName" placeholder="First Name" title="First Name">
+										<input type="text" name="lastName" placeholder="Last Name" title="Last Name">
+										<input type="email" name="email" placeholder="Email" title="Email">
+										<input type="tel" name="phone" placeholder="Phone" title="Phone">
+										<button class="uk-button uk-button-primary button-case" name="submit" type="button">Send Message</button>  
+									</form>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
 			</div>
-		</section>
+		</div>
 	</div>
 </div>
+
+<!-- Section three -->
 
 <?php get_footer(); ?>
 

@@ -80,6 +80,8 @@ body{
 
 .uppercase{text-transform: uppercase;}
 
+.margintop-50{margin-top: -50px;}
+
 .dark-color{ background: #0a0a0a !important; }
 
 .resetMarginLeft{margin-left: -40px !important;}
@@ -92,23 +94,36 @@ body{
     max-width: 100%;
 }
 
+.image-two{
+	background: url('../images/img2.jpg') no-repeat;
+	height: 560px;
+    width: 500px;
+    max-width: 100%;
+}
+
 .bg1{
 	background-image: linear-gradient( to bottom, #0a0a0a, #0a0a0a, #141414 ); 
 }
 .bg2{
-	background: linear-gradient(rgba(20,20,20,1.9),rgba(20,20,20,.3)), url('../images/img3.jpg') center center no-repeat;
+	background: linear-gradient(rgba(20,20,20,1.9),rgba(20,20,20,.3),rgba(20,20,20,1.9)), url('../images/img3.jpg') center center no-repeat;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 612px;
+    height: auto;
 }
-.image-two{
-	background: url('../images/img2.jpg') no-repeat;
-	height: 610px;
-    width: 500px;
-    max-width: 100%;
+
+.bg3{
+	background: url('../images/img3.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*height: 612px;*/
 }
+
+
+
 
 .content-one{
 	background: #0a0a0a;
@@ -121,6 +136,11 @@ body{
 
 .title-one, .title-two{
 	color: #f5f5f5;
+	font-family: Montserrat-semibold;
+}
+
+.title-three{
+	color: #1c1a14 !important;
 	font-family: Montserrat-semibold;
 }
 
@@ -167,5 +187,20 @@ span{ display: block; }
 }
 
 .general{
-	padding-bottom: 140px;
+	padding: 0px 0px 0px 0px !important;
+}
+
+.top-form{
+	color: #1d1a14;
+	font-family: Montserrat;
+}
+
+input {
+  background:transparent !important;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #c91b38;
+}
+input:focus {
+  border-color: #e43955;
 }
