@@ -24,9 +24,11 @@ function medusa_config(){
 	);
 
 	add_theme_support( 'custom-logo', array(
-    'height' => 480,
-    'width'  => 720,
-) );
+		'height' => 480,
+		'width'  => 720,
+	) );
+	add_theme_support('post-thumbnails');
+	add_theme_support('post-formats', array('video', 'image'));
 
 
 }
