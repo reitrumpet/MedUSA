@@ -1,1 +1,0 @@
-UIkit.icon(element, options);

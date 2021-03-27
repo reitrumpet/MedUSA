@@ -13,15 +13,7 @@
 			<nav class="uk-navbar-container uk-margin uk-container uk-navbar-transparent" uk-navbar>
 				<div class="uk-grid uk-width-1-1">
 					<div class="nav-overlay uk-navbar-left">
-
-						<a class="uk-navbar-item uk-logo" href="#">
-							<?php 
-							$custom_logo_id = get_theme_mod( 'custom_logo' );
-							$custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
-							echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="">';
-							?>			
-						</a>
-
+							<?php the_custom_logo(); ?>
 					</div>
 
 					<div class="nav-overlay uk-navbar-right">
@@ -49,12 +41,15 @@
 						<a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
 
 					</div>
-					<div class="main-menu uk-width-1-1">
+						<a href="#offcanvas-usage" class="uk-navbar-toggle uk-hidden@m uk-margin-left"  uk-toggle="target: #offcanvas-reveal" uk-navbar-toggle-icon></a>
+
+					<div class="main-menu uk-width-1-1 uk-visible@m">
 						<?php wp_nav_menu(
 						array(
 						'theme_location'=>'my_main_menu'
 						)
 						); ?>
+
 					</div>
 				</div>
 			</nav>

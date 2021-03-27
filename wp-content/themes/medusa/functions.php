@@ -18,7 +18,8 @@ function medusa_config(){
 			'footer_menu_2' => 'Main Menu Footer block 2',
 			'footer_menu_3' => 'Main Menu Footer block 3',
 			'packages_menu' => 'Main Menu Packages',
-			'bottom_menu' => 'Main menu Bottom Bar'
+			'bottom_menu' => 'Main menu Bottom Bar',
+			'offcanvas_menu' => 'Main menu Offcanvas'
 		)
 	);
 

@@ -66,7 +66,7 @@
 						</div>
 					</section>
 				</div>
-				<div>
+				<div class="general-packages">
 					<section class="">
 						<div class="packages-menu">
 							Packages:
@@ -98,6 +98,21 @@
 		</section>
 	</div>
 </footer>
+
+
+<div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+	<div class="uk-offcanvas-bar uk-grid">
+		<div class="margintop40 off-canvas-menu">
+			<button class="uk-offcanvas-close" type="button" uk-close></button>
+
+			<?php wp_nav_menu(
+				array(
+					'theme_location'=>'offcanvas_menu'
+				)
+			); ?>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>

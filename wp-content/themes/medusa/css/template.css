@@ -48,6 +48,12 @@ body{
 	list-style: none;
 }
 
+.off-canvas-menu{}
+.off-canvas-menu ul {}
+.off-canvas-menu ul li{list-style: none; padding-bottom: 10px;}
+.off-canvas-menu ul li a{text-decoration: none; }
+.off-canvas-menu ul li a:hover{border-bottom: solid 1px; }
+
 .login-menu ul li, .main-menu ul li{
 	display: list-item;
 	text-align: -webkit-match-parent;
@@ -73,6 +79,9 @@ body{
 	font-size: 14px;
 	margin: 0px 0px 0px 80px;
 }
+.main-menu ul li a:hover{
+	border-bottom: solid 2px;
+}
 
 .footer-menu{
 	font-size: 14px;
@@ -81,6 +90,9 @@ body{
 .footer-menu ul li a{
 	color:#fff;
 	margin: 0px 0px 0px 50px !important;
+}
+.footer-menu ul li a:hover{
+	border-bottom: solid 1px;
 }
 .footer-menu ul li{
 	margin: 0px 0px 20px 00px !important;
@@ -115,6 +127,7 @@ display: block !important;
 .uppercase{text-transform: uppercase;}
 
 .margintop-50{margin-top: -50px;}
+.margintop40{margin-top: 40px;}
 
 .dark-color{ background: #0a0a0a !important; }
 
@@ -225,6 +238,8 @@ span{ display: block; }
 	padding: 0px 0px 0px 0px !important;
 }
 
+.general-packages{padding: 0px 50px 0px 0px;}
+
 .top-form{
 	color: #1d1a14;
 	font-family: Montserrat-bold;
@@ -260,7 +275,7 @@ span{ display: block; }
 	color: #555452 !important;
 }
 
-label-float input::placeholder{
+.label-float input::placeholder{
 	color:transparent;
 }
 
@@ -313,6 +328,14 @@ label-float input::placeholder{
 	font-size: 12px;
 	font-family: Montserrat-semibold;
 }
+
+.h1blog{
+	font-family: Montserrat-bold
+}
+
+.uk-icon{min-width: 20px;}
+
+.uk-offcanvas-bar{background: #0a0a0a;}
 
 
 
