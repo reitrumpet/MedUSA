@@ -17,16 +17,16 @@
 
 						</div>
 						<div class="address uk-margin-top">
-							<div class="location">9825 S 500 W</div>
-							<div class="address-line">Sandy, UT 84070</div>
-							<div class="contact-one">Support: 801.352.9500</div>
-							<div class="contact-two">Sales: 855.303.8806</div>
-							<div class="contact-email">info@medusacm.com</div>
+							<div class="location"><?php the_field('address_line_1'); ?></div>
+							<div class="address-line"><?php the_field('address_line_2'); ?></div>
+							<div class="contact-one"><?php the_field('address_contact_1'); ?></div>
+							<div class="contact-two"><?php the_field('address_contact_2'); ?></div>
+							<div class="contact-email"><?php the_field('address_contact_email'); ?></div>
 						</div>
 						<div class="social-icons uk-grid uk-width-1-1 uk-margin-top">
-							<div class="twitter uk-width-1-3"><a href="" uk-icon="icon: twitter"></a></div>
-							<div class="facebook uk-width-1-3"><a href="" uk-icon="icon: facebook"></a></div>
-							<div class="linkedin uk-width-1-3"><a href="" uk-icon="icon: linkedin"></a></div>
+							<div class="twitter uk-width-1-3"><a href="<?php the_field('twitter'); ?>" uk-icon="icon: twitter"></a></div>
+							<div class="facebook uk-width-1-3"><a href="<?php the_field('facebook'); ?>" uk-icon="icon: facebook"></a></div>
+							<div class="linkedin uk-width-1-3"><a href="<?php the_field('linkedin'); ?>" uk-icon="icon: linkedin"></a></div>
 						</div>
 					</section>
 				</div>
@@ -85,7 +85,7 @@
 	</div>
 	<div class="uk-container uk-margin-top">
 		<section class="bottom-bar uk-grid uk-width-1-1">
-			<div class="copyright uk-width-1-2">©2020 MedUSA | All right reserved</div>
+			<div class="copyright uk-width-1-2"><?php the_field('copyright'); ?></div>
 			<div class="menu-bottom-bar uk-width-1-2">
 				<?php 
 				wp_nav_menu(

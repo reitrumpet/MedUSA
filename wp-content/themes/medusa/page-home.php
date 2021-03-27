@@ -7,18 +7,15 @@
 	<div class="bg1">
 		<div class="uk-container">
 			
-			<!-- <div class="image-one floatLeft">
-				<img src="<?php echo get_template_directory_uri();?>/images/img1.jpg" width="940px" height="664px">
-			</div> -->
 			<section class="content-one uk-grid floatRight">
 
 				<div class="card-one">
-					<h1 class="title-one">MedUSA</h1>
+					<h1 class="title-one"><?php the_field('title_section_1'); ?></h1>
 					<div class="border-top">&nbsp;</div>
-					<div class="subtitle-one"><span>Physician services to help you</span><span>manage your pratice.</span></div>
+					<div class="subtitle-one uk-width-2-3"><?php the_field('description_section_1'); ?></div>
 					<div class="button-one">
-						<button class="uk-button uk-button-primary button-services">View Our Services</button>
-						<button class="uk-button uk-button-primary button-software">Software We Offer</button>
+						<button class="uk-button uk-button-primary button-services"><?php the_field('name_button_1_section_1'); ?></button>
+						<button class="uk-button uk-button-primary button-software"><?php the_field('name_button_2_section_1'); ?></button>
 						
 					</div>
 				</div>
@@ -38,12 +35,12 @@
 					<div class="uk-container">
 						<section class="content-two uk-grid uk-width-1-1">
 							<div class="card-two uk-width-1-2">
-								<h2 class="title-two">Cloud Based RCM Service and Software</h2>
+								<h2 class="title-two"><?php the_field('title_section_2'); ?></h2>
 								<div class="border-top2">&nbsp;</div>
-								<h3 class="subtitle-two">Excellent Service is Our Promise</h3>
-								<div class="description-two">Providing excellent service to your patients and your pratice is our promise. Our dedicated team of billing specialists and billing managers are here to help. We have over 38 years of combined pratice management and industry knowledge. Let our experience work for your.</div>
+								<h3 class="subtitle-two"><?php the_field('subtitle_section_2'); ?></h3>
+								<div class="description-two"><?php the_field('description_section_2'); ?></div>
 								<div class="button-two">
-									<button class="uk-button uk-button-primary button-case">See Our Case Studies</button>
+									<button class="uk-button uk-button-primary button-case"><?php the_field('name_button_section_2'); ?></button>
 								</div>
 							</div>
 							<div class="image-two uk-width-1-2">&nbsp</div>
@@ -70,10 +67,10 @@
 								<div class="uk-grid">
 									<!-- <img class="diagonal-top" src="<?php echo get_template_directory_uri() . '/images/qb_upper.png'?>" /> -->
 									<div class="diagonal-top">&nbsp;</div>
-									<div class="title-three">From Small Practices to Large Provider Health Systems, Med USA Provides Scalable Solutions.</div>
+									<div class="title-three"><?php the_field('title_section_3'); ?></div>
 									<div class="diagonal-bottom">&nbsp;</div>
 									<!-- <img class="diagonal-bottom" src="<?php echo get_template_directory_uri() . '/images/qb_lower.png'?>" /> -->
-									<div class="top-form uk-grid">Reach out to see how our team can help.</div>
+									<div class="top-form uk-grid"><?php the_field('subtitle_section_3'); ?></div>
 								</div>
 								
 								<div class="form-area uk-grid">
@@ -97,7 +94,7 @@
 										<div class="uk-grid uk-margin-top uk-width-1-1">
 											<div class="uk-width-1-3"></div>
 											<div class="uk-width-1-3"></div>
-											<div class="uk-width-1-3"><button class="uk-button uk-button-primary button-submit floatRight" name="submit" type="button">Submit</button>  </div>
+											<div class="uk-width-1-3"><button class="uk-button uk-button-primary button-submit floatRight" name="submit" type="button"><?php the_field('name_button_section_3'); ?></button>  </div>
 											
 										</div>
 									</form>

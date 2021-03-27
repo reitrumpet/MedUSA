@@ -1,5 +1,8 @@
 <?php
 
+require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
+require_once get_template_directory() . '/inc/required-plugins.php';
+
 function load_scripts(){
 	wp_enqueue_script('uikit-js', 'https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js', array('jquery'), '3.6.18', false);
 	wp_enqueue_script('uikit-icons-js', 'https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit-icons.min.js', array('jquery'), '3.6.18', false);
